@@ -6,23 +6,23 @@ on:
       MANIFEST_URL:
         description: 'MANIFEST_URL (如果想使用SSH密钥，请使用 git@github.com:XXXXX)'
         required: true
-        default: 'http://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git'
+        default: 'https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git'
       MANIFEST_BRANCH:
         description: 'MANIFEST_BRANCH'
         required: true
-        default: 'twrp-6.0'
+        default: 'twrp-11'
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/momo54181/android_device_gionee_GIONEE_BBL7516A'
+        default: 'https://github.com/zjadzhd/android_tree_twrp_sunstone'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
-        default: 'android-6.0'
+        default: 'android-11.0'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        default: 'device/gionee/GIONEE_BBL7516A'
+        default: 'device/qualcomm/sunstone'
       COMMON_TREE_URL:
         description: 'COMMON_TREE_URL (如果没有共同树，留空)'
         required: false
@@ -32,11 +32,11 @@ on:
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
-        default: 'GIONEE_BBL7516A'
+        default: 'sunstone'
       MAKEFILE_NAME:
         description: 'MAKEFILE_NAME'
         required: true
-        default: 'twrp_I003D'
+        default: 'twrp_sunstone'
       BUILD_TARGET:
         description: 'BUILD_TARGET'
         required: true
