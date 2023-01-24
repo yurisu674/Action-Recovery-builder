@@ -10,7 +10,7 @@ on:
       MANIFEST_BRANCH:
         description: 'MANIFEST_BRANCH'
         required: true
-        default: 'twrp-10.0-deprecated'
+        default: 'twrp-9.0'
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
@@ -127,7 +127,7 @@ jobs:
       uses: haya14busa/action-cond@v1
       id: buildtree
       with:
-        cond: ${{ github.event.inputs.MANIFEST_BRANCH == 'twrp-10.0-deprecated' || github.event.inputs.MANIFEST_BRANCH == 'twrp-10.0-deprecated' }}
+        cond: ${{ github.event.inputs.MANIFEST_BRANCH == 'twrp-9.0' || github.event.inputs.MANIFEST_BRANCH == 'twrp-9.0' }}
         if_true: twrp
         if_false: omni
 
@@ -144,7 +144,7 @@ jobs:
         swap-size-gb: 12
 
     - name: Check Build Branch
-      if: ${{ github.event.inputs.MANIFEST_BRANCH == 'twrp-10.0-deprecated' }}
+      if: ${{ github.event.inputs.MANIFEST_BRANCH == 'twrp-9.0' }}
       run: |
         source build/envsetup.sh
         repopick 5405 5540
