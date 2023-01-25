@@ -14,7 +14,7 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/zjadzhd/android_tree_twrp_sunstone'
+        default: 'https://github.com/yurisu674/android_tree_twrp_sunstone'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
